@@ -1,0 +1,1836 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap');
+
+                                        /* Estilos da Section Latest da Home e Carrossel com logos*/
+
+
+    /* Estilos Latest H1 e Button*/
+
+   .latest-news{
+    display: flex;
+    justify-content: space-between;
+
+   }
+
+   .latest-news h1{
+    margin-left: 140px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 42px;
+
+   }
+
+   .latest-news button{
+
+    background-color: transparent;
+    margin-right: 140px;
+    width: 223px;
+    height: 54px;
+    border: 0.5px solid #000000;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: 'DM Mono';
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+
+   }
+
+   .latest-news button:hover{
+    background-color: #C45D16;
+    border: none;
+    color: #FFFFFF;
+   }
+
+    /* Estilos para Carousel, Cards e Setas com Barra */
+
+    .slick-carousel{
+        margin-left: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            
+    }
+
+        .slick-track {
+        margin-left: 189px; 
+    }
+
+        .card-latest {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 378px;
+            height: 500px;
+            max-width: 378px;
+            max-height: 500px;
+            background-color: #F9F6EC;
+            padding: 30px;
+            border-radius: 50px;
+            border: none;
+            margin: 5px;        
+           
+        
+        }
+
+        .card-latest p {
+            font-family: 'DM Mono';
+            text-transform: uppercase;
+            font-size: 12px;
+            line-height: 15.62px;
+            font-weight: 500;
+        }
+
+        .card-latest h3 {
+            width: 100%;
+            max-width: 311px;
+            font-family: 'DM Sans';
+            font-size: 22px;
+            line-height: 26px;
+            font-weight: 500;
+            min-height: 150px; /* Altura mínima para todos os títulos */
+            max-height: 156px; /* Altura máxima para limitar títulos muito longos */
+            overflow: hidden; /* Oculta o excesso de texto caso ultrapasse a altura máxima */
+            text-overflow: ellipsis; /* Adiciona reticências (...) caso o texto seja muito longo */
+            
+        }
+
+        .card-latest img {
+            
+            width: 100%;
+            max-width: 311px;
+            height: 188px;
+            object-fit: cover;
+            
+        }
+
+        .card-latest button {
+            margin-top: 15px;
+            width: 175px;
+            height: 43px;
+            border: 0.5px solid;
+            border-color: #000000;
+            border-radius: 40px;
+            background-color: transparent;
+            font-family: 'DM Mono';
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15.62px;
+            cursor: pointer;
+            
+        }
+
+    .custom-carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 15px;
+    margin-top: 90px; /* Ajuste a distância do carrossel */
+}
+
+    .custom-prev{
+    margin-left: 146px;
+}
+
+    .custom-next{
+    margin-right: 146px;
+}
+
+
+    .custom-carousel-controls button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    
+    
+}
+
+    .custom-progress-bar {
+    max-width: 250px;
+    flex: 1;
+    height: 1px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+    .custom-progress-bar .custom-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: #000000;
+    transition: width 0.2s ease;
+    cursor: pointer;
+}
+
+.image5{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.image5 p{
+    font-family: 'DM Mono';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.62px;
+}
+
+/* Carousel com logos*/
+
+.footer-carousel {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.footer-carousel img {
+    
+  max-width: 262px;
+  height: 108px;
+  margin: 0 auto;
+}
+
+
+/* Responsividade Latest News H1 e Button*/
+
+
+@media (max-width: 768px) {
+
+        .slick-track {
+        margin-left: 0px; 
+    }
+
+    .latest-news {
+    display: flex;
+    flex-direction: column;
+    } 
+
+       .latest-news h1{
+    margin-left: 30px;
+ 
+   }
+
+      .latest-news button{
+        display: none;
+        margin-right: 0px;
+
+   }
+       .slick-carousel{
+        margin-left: 20px;
+   
+            
+    }
+
+    }
+
+    /* Mobile */
+
+
+    @media (max-width: 500px) {
+    
+
+    .latest-news {
+       
+    display: flex;
+    flex-direction: column;
+   
+    } 
+  
+    .slick-track {
+        margin-left: 0px; 
+    }
+
+    .latest-news h1 {
+    margin-left: 30px;
+    font-size: 36px;
+ 
+   }
+
+   /* Cards*/ 
+
+
+      .card-latest {
+         
+            width: 321px;
+            height: 452px;
+            max-width: 321px;
+            max-height: 452px;
+          
+        
+        }
+
+        .card-latest h3 {
+           
+            font-size: 18px;
+            min-height: 140px; /* Altura mínima para todos os títulos */
+            max-height: 145px; /* Altura máxima para limitar títulos muito longos */
+            
+        }
+
+        .card-latest img {
+            
+            width: 100%;
+            min-width: 259;
+            max-width: 259px;
+            height: 157px;
+            object-fit: cover;
+            
+        }
+
+
+    /* Setas de controle*/
+
+        .custom-prev{
+        
+            display: none;
+        }
+
+        .custom-next{
+            
+            display: none;
+        }
+
+
+        .custom-carousel-controls {
+
+       justify-content: center;
+        margin-top: 50px;
+
+        }
+
+    }
+
+
+
+
+
+
+                                            /* Estilos da página News*/
+
+/* Imagem de fundo*/
+.body-news{
+    background-image: url('/img/news/Frame.png');
+    background-repeat: no-repeat;
+    background-position: 320px 293px;
+    background-attachment: fixed;
+
+}
+
+.main-news{
+    margin-left: 140px;
+    
+}
+
+/* Estilos do H1 e Botão Linkedin*/
+
+.div-title{
+    margin-top: 130px;
+    display: flex;
+}
+
+.div-title h1{
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 46px;
+}
+
+.div-title button{
+    margin-left: 596px;
+    width: 203px;
+    height: 43px;
+    border: 0.5px solid #000000;
+    border-radius: 40px;
+    background-color: transparent;
+    font-family: 'DM Mono';
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 15.62px;
+
+}
+
+.div-title button:hover{
+    background-color: #C45D16;
+    border: none;
+    color: #FFFFFF;
+
+}
+
+.div-title a{
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Cards */
+   
+.cards-1{
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.cards-1 button:hover{
+    background-color: #C45D16;
+    border: none;
+    color: #FFFFFF;
+}
+
+.cards-2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards-2 button:hover{
+    background-color: #C45D16;
+    border: none;
+    color: #FFFFFF;
+}
+
+/* Botão Load More*/
+
+.load-more button{
+    width: 203px;
+    height: 43px;
+    border-radius: 40px;
+    border: 0.5px solid #000000;
+    background-color: transparent;
+    font-family: 'DM Mono';
+    font-size: 12px;
+
+}
+
+.load-more button:hover{
+    background-color: #C45D16;
+    border: none;
+    color: #FFFFFF;
+}
+
+.load-more{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+/* Section com formulário*/
+
+.section-form{
+  
+    background-color: #EFEDE5;
+    width: 100%;
+    height: 438px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.div-form h3{
+    width: 546px;
+    font-family: 'DM Sans';
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 500;
+    margin-top: 60px;
+    
+}
+
+.div-form{
+display: flex;
+flex-direction: column;
+align-items: center;
+ 
+}
+
+.news-input-name{
+    width: 479px;
+    height: 55px;
+    border: 0.5px solid #24242F;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 16px;
+    font-family: 'DM Sans';
+    font-weight: 400px;
+    color: #9A9998;
+    margin-top: 20px;
+
+}
+
+
+.news-input-name:focus{
+    border-width: 1.5px; 
+    border-style: solid; 
+    border-color: #24242F; 
+    outline: none;   
+}
+
+.news-input-email{
+    width: 479px;
+    height: 55px;
+    border: 0.5px solid #24242F;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 16px;
+    font-family: 'DM Sans';
+    font-weight: 400px;
+    color: #9A9998;
+    margin-top: 10px;
+    outline: none;  
+
+}
+
+.news-input-email:focus{
+    border-width: 1.5px; 
+    border-style: solid; 
+    border-color: #24242F; 
+    outline: none;
+}
+
+.button-news{
+    background-color: transparent;
+    width: 140.82px;
+    height: 54px;
+    border: 0.5px solid;
+    border-radius: 50px;
+    margin-top: 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.button-news:hover{
+    background-color: #C45D16;
+    border: none;
+    color: #FFFFFF;
+
+}
+
+                                        /* Responsividade News*/
+@media (max-width: 1042px){
+
+    .div-title button{
+        display: none;
+    }
+    .body-news{
+    background-image: none;
+  
+}
+
+
+}
+@media (max-width: 550px){
+    .main-news{
+    margin-left: 0px;
+    padding: 17px;
+    align-items: center;
+    
+    }
+    .div-title h1{
+        font-size: 36px;
+        line-height: none;
+
+    }
+
+    .div-title{
+    margin-top: 90px;
+    }
+
+
+
+    .cards-1{
+    margin-top: 25px;
+    }
+
+    .div-form h3{
+        
+    width: 358px; 
+    margin-top: 30px;
+ 
+    
+    }
+
+    .news-input-name{
+    width: 348px;
+
+    }
+
+.news-input-email{
+    width: 348px;
+ 
+}
+.section-form{
+  
+    max-height: 501px;
+}
+.button-news{
+ 
+    margin-top: 40px;
+  
+}
+   
+
+}
+  @media (max-width: 368px ){
+
+  .news-input-name{
+    width: 318px;
+
+    }
+
+  .news-input-email{
+    width: 318px;
+ 
+    }
+
+      
+    }
+
+                                        /* Estilos da página Biotech*/
+
+.main-biotech{
+    margin-top: 130px;
+    margin-left: 140px;  
+    flex-wrap: wrap;   
+}
+
+.body-biotech{
+    background-image: url('/img/biotech/Frame.svg');
+    background-repeat: no-repeat;
+    background-position: 250px 323px;
+    background-attachment: fixed;
+    overflow-x: hidden;
+
+}
+
+
+.title h1{
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 42px;
+}
+
+.first-section{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.div-1 h2{
+    margin-top: 90px;
+    width: 460px;
+    flex-wrap: wrap;
+    height: 170px;
+    font-family: 'DM Sans';
+    font-size: 36px;
+    font-weight: 500;
+
+}
+
+.div-1 p{
+
+    margin-top: 60px;
+    width: 460px;
+    height: 313px;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; 
+    
+}
+
+/* Animação*/
+
+.div-2 img{
+  margin-left: 233px;
+  width: 377px;
+  height: 591px;
+  height: auto;
+
+}
+
+.div-2{
+        
+  display: flex;
+  position: relative;
+  height: 100vh;
+
+}
+
+.animacao{
+
+  position: absolute;
+  transition: opacity 0.6s ease-in-out; 
+}
+
+.image1{
+ z-index: 1;
+ transition: opacity 0.8s ease-in-out; 
+
+}
+
+.image2{
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out; 
+
+}
+
+.second-section{
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.div-3 h3{
+    width: 459px;
+    height: 187px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.div-4 p{
+    margin-left: 233px;
+    width: 459px;
+    height: 187px;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+  /* Cards com Hover*/
+
+ .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    }
+    
+    .card {
+    position: relative;
+    width: 380px;
+    height: 525px;
+    background-color: #EFEDE5;
+    border-radius: 50px;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.2s ease;
+    }
+    
+    .card:hover {
+    transform: scale(1.05);
+    }
+    
+    .card-content, .card-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+    }
+    
+    .card-content{
+    background-color: #EFEDE5;
+    font-size: 1.2em;
+    opacity: 1;
+    z-index: 1;
+    }
+    
+    .card-hover {
+    background-color: #EFEDE5;
+    color: black;
+    font-size: 1em;
+    opacity: 0;
+    z-index: 2;
+    }
+    
+    .card:hover .card-content {
+    opacity: 0;
+    }
+    
+    .card:hover .card-hover {
+    opacity: 1;
+
+    }
+
+    #h3{
+        margin-left: 8px;
+        font-family: 'DM Sans';
+        font-weight: 500;
+        font-size: 22px;
+        color: #000000;
+    }
+
+    #A{
+        margin-bottom: 10px;
+        margin-left: 25px;
+        width: 32px;
+        height: 32px;
+    }
+
+    #logo{
+        width: 380px;
+        height: 184px;
+        margin-top: 15px;
+    }
+
+    #title{
+        display: flex;
+        align-items: center;
+    }
+
+    .card-content p{
+        margin-left: 25px;
+        margin-top: 35px;
+        font-family: 'DM Mono';
+        font-weight: 500;
+        font-size: 12px;
+        color: #000000;
+        text-transform: uppercase;
+    }
+
+    .card-content ul{
+        font-family: 'DM Sans';
+        font-size: 16px;
+        margin-left: 10px;
+        color: #000000;
+    }
+
+    /* Cor de fundo card B e C*/
+
+    #card-b{
+        background-color: #FF9F5E ;
+    } 
+    
+    #card-c{
+        background-color: #DE7B36 ;
+    }
+
+    /* Margem Top e Bottom dos Cards*/
+
+    .cards-3{
+        margin-top: 60px ;
+        margin-bottom: 130px;
+
+    }
+
+    /* Estilos Hover */
+
+    .card-hover p{
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 14px;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 25px;
+        line-height: 22px;
+    }
+
+    #card-hover-a p{
+        margin-bottom: 50px;
+    }
+
+    /* Card B*/
+
+    #card-hover-b p{
+        margin-bottom: 135px;
+    }
+
+     #card-hover-b{
+       background-color: #FF9F5E;
+    }
+
+    /* Card C*/
+
+    #card-hover-c{
+       background-color: #DE7B36;
+    }
+
+    #card-hover-c p{
+        margin-bottom: 205px;
+    }
+
+                                      /* Responsividade Biotech*/
+
+    @media (max-width: 917px){
+
+        .body-biotech{
+        background-image: none;
+   
+        }
+        #fixed-mobile{
+        display: none; /* Botão oculto em dispositivos móveis */
+        }
+
+        .main-biotech{
+            margin-top: 100px;
+            margin-left: 0px;
+            padding: 15px;
+        }
+
+        .first-section{
+    flex-direction: column;
+    
+        }
+
+        .div-1 h2{
+            font-size: 22px;
+            margin-top: 30px;
+            max-width: 100%;
+            width: 333px;
+            height: 155px;
+
+        }
+        .div-1 p{
+            margin-top: 30px;
+            max-width: 100%;
+            width: 333px;
+            height: 313px;
+        }
+
+        .div-2 img{
+            width: 350px;
+            margin-left: 0px;
+            margin-top: 35px;
+          
+        }
+        .div-3 h3{
+            max-width: 100%;
+            width: 352px;
+            height: 187px;
+            margin-top: 0px;
+        }
+
+        .div-4 p{
+            margin-left: 0px;
+            max-width: 100%;
+            width: 349px;
+            height: 130px;
+            
+        }
+
+        .second-section{
+            margin-top: 50px;
+
+        }
+
+        .cards-3{
+        margin-top: 5px;
+        margin-bottom: 100px;
+
+        }
+        .card-content ul{
+        margin-left: 40px;
+
+        }
+         #card-hover-c p{
+        margin-bottom: 160px;
+
+        }
+         #card-hover-b p{
+        margin-bottom: 80px;
+
+        }
+         #card-hover-a p{
+        margin-bottom: 5px;
+
+        }
+        .animacao{
+        transition: opacity 5s ease; 
+        }
+
+    }
+     @media (min-width: 522px) and (max-width: 1350px) {
+
+        .body-biotech{
+        background-image: none;
+   
+        }
+
+
+        .div-1 h2{
+            font-size: 22px;
+            margin-top: 50px;
+            max-width: 100%;
+            width: 333px;
+            height: 155px;
+
+        }
+        .div-1 p{
+            margin-top: 5px;
+            max-width: 100%;
+            width: 333px;
+            height: 313px;
+        }
+
+        .div-2 img{
+            margin-left: 0px;
+            margin-top: 35px;
+          
+        }
+        .div-3 h3{
+            max-width: 100%;
+            width: 352px;
+            height: 187px;
+            margin-top: 35px;
+        }
+
+        .div-4 p{
+            margin-left: 0px;
+            max-width: 100%;
+            width: 349px;
+            height: 130px;
+            
+        }
+        .cards-3{
+        margin-top: 5px;
+        margin-bottom: 100px;
+
+        }
+        
+
+       
+
+     }
+
+                                                     /* Estilos do Footer*/
+ /* Div do botao do mobile para nao aparecer no Desktop*/
+    .getintouch-mobile{
+        display: none;
+  }
+
+.mobile{
+
+    display: none;
+}
+
+.hr{
+    color: #9A9998;
+}
+
+/* Inicio do formulário com checkbox e botão */
+
+footer{
+
+    font-family: 'Dm Sans';
+
+}
+
+.dm-mono-medium {
+  font-family: "DM Mono", monospace; /* Define a fonte DM Mono */
+  font-weight: 500; /* Define o peso da fonte */
+  font-style: normal; /* Fonte sem itálico */
+}
+
+.containerfooter{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.title{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.input-name{
+    width: 351px;
+    height: 56.9px;
+    border-radius: 5px;
+    border: 0.5px solid;
+    padding: 10px;
+
+}
+
+.input-name:focus{
+    outline-width: 1,5px;     
+    outline-color: #24242F;    
+    outline-style: solid;
+}
+
+.input-email{
+    width: 351px;
+    height: 56.9px;
+    border-radius: 5px;
+    border: 0.5px solid;
+    padding: 10px;
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+.input-email:focus{
+    outline-width: 1,5px;     
+    outline-color: #24242F;    
+    outline-style: solid;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px; 
+}
+
+
+input[type="checkbox"] {
+    appearance: none; 
+    width: 21px; 
+    height: 21px; 
+    border: 0.5px solid #000000; 
+    background-color: #EFEDE5; /* Cor de fundo */
+    cursor: pointer; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="checkbox"]:checked::after {
+   
+    content: '';
+    width: 9px;
+    height: 9px;
+    display: block;
+    background-color: #000; /* Sem conteúdo, fundo é preto */
+
+   
+}
+
+label {
+    font-family: 'DM+mono';
+    font-size: 12px;
+    line-height: 15,62px;
+    color: #333;
+    text-transform: uppercase; 
+}
+
+label span {
+    color: #d35400; /* Cor do texto "PRIVACY POLICY" */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button{
+    background-color: white;
+    width: 140.82px;
+    height: 54px;
+    border: 0.5px solid;
+    border-radius: 50px;
+    margin-top: 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #C45D16;
+    border: none;
+    color: #FFFFFF;
+}
+
+.group87{
+
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.group87 ul{
+    list-style: none;
+    color: #858585;
+    font-family: 'Dm sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+     
+
+}
+
+/* Links */
+
+.list{
+
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.ul{
+
+    list-style: none;
+    
+}
+
+.ul a{
+
+    text-decoration: none;
+    color: #858585;
+    font-family: 'Dm sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+        
+}
+
+.linkedin img{
+    width: 28px;
+    height: 28px;
+}
+
+.linkedin{
+    
+    margin-left: 30px;
+}
+
+/* Rodapé */
+
+.container-rodape{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.p{
+    margin-left: 160px;
+}
+
+.a{
+    margin-left: 500px;
+}
+
+.gridspace{
+    margin-left: 80px;
+}
+
+.p, .a, .gridspace {
+    
+    font-family: 'DM Mono';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.62px;
+}
+    
+    .p a, .a a, .gridspace a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.gridspace a {
+    color: #9A9998;
+}
+
+.p a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+/* Responsividade para dispositivos médios (tablets) */
+
+
+@media (max-width: 1300px){
+
+     .mobile{
+        display: none;
+    }
+
+      .container-rodape {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .p, .a, .gridspace {
+        
+        margin: 10px 0;
+        text-align: center;
+    }
+
+      .list {
+     
+        margin-top: 15px;
+        
+    }
+
+    .group87{
+        margin-top: 0px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .mobile{
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        margin-bottom: 20px;
+        
+        max-width: 400px;
+    }
+
+    .list {
+        flex-direction: column;
+        
+        
+    }
+
+    .ul {
+        margin-bottom: 20px;
+    }
+
+       .container-rodape {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .p, .a, .gridspace {
+        
+        margin: 10px 0;
+        text-align: center;
+    }
+
+   } 
+
+
+/* Responsividade para dispositivos pequenos (mobile) */
+@media (max-width: 522px) {
+
+    .desktop{
+        display: none;
+    } 
+
+    .input-name{
+        width: 336px;
+    }
+
+    .input-email{
+        width: 336px;
+    }
+
+    #fixed-mobile{
+        display: none; /* Botão oculto em dispositivos móveis */
+        }
+
+    .mobile{
+        display: flex;
+        flex-direction: column;
+        margin-left: 16px;
+    }
+
+
+    .p-a h3{
+
+        font-size: 18px;
+        font-family: 'DM Sans';
+        font-weight: 500;
+        line-height: 22px;
+        width: 351px;
+
+    }
+
+    .p-a img{
+        width: 28px;
+        height: 28px;
+        margin-left: 89px;
+
+    }
+
+    .list-mobile{
+        display: flex;
+        
+    }
+
+    ul, li {
+
+    margin: 0;
+    padding: 0;
+
+    }
+
+    #list2{
+
+        margin-left: 82px;
+
+    }
+
+    #nm{
+        width: 125px;
+    }
+
+    .group87{
+        align-items: center;
+    }
+
+    #logo-footer{
+        width: 69px;
+        height: 64px;
+    }
+
+    #cl4{
+        margin-left: 30px;
+    }
+
+  .privacy-policy a{
+
+    font-family: 'DM Mono';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.62px;
+    color: #000000;
+    text-decoration: none;     
+
+  }
+
+  .developed-by{
+    color: #D2D2D2 ;
+    margin-left: 60px ;
+  }
+
+  .grid-space{
+    color: #858585;
+  }
+
+  .rodape{
+    display: flex;
+  }
+
+  .getintouch-mobile{
+    width: 100%;
+    height: 70px;
+    background-color: #0E0466;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+  
+  }
+   
+}
+
+                                        /* Estilos da Página Material Request / Contact Us*/
+.body-enquiries-request{
+    background-image: url('/img/biotech/Frame.svg');
+    background-repeat: no-repeat;
+    background-position: 338px 175px;
+    background-attachment: fixed;
+    
+    
+}
+.body-enquiries-contact{
+    background-image: url('/img/biotech/Frame.svg');
+    background-repeat: no-repeat;
+    background-size: 787px 1400px;
+    background-position: 338px 175px;
+    background-attachment: fixed;
+    
+    
+}
+
+.main-material-request{
+    margin-left: 140px;
+    margin-top: 160px;
+}
+
+.section-radio-form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.title-enquiries{
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 42px;
+    margin-bottom: 46px;
+}
+
+.choose{
+    text-transform: uppercase;
+    font-family: 'DM Mono';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.62px;
+    color: #24242F;
+}
+
+/* Estilos Input Radio*/   
+
+.radio-container{
+    display: flex;
+    width: 435px;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.radio-container label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-size: 22px;
+      font-family: 'DM Sans';
+      font-weight: 500;
+      text-transform: none;
+    }
+
+    .radio-container input[type="radio"] {
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 0.5px solid #000000;
+      background-color: #EFEDE5;
+      border-radius: 50%;
+      outline: none;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .radio-container input[type="radio"]:checked::after {
+      content: '';
+      display: block;
+      width: 9px;
+      height: 9px;
+      background-color: #000000;
+      border-radius: 50%;
+    }
+
+    .contact-contentp{
+        width: 447px;
+        height: 140px;
+        font-family: 'DM Sans';
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    /* Estilos formulário Enquiries*/
+
+.form-enquiries{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.form-enquiries input{
+    width: 479px;
+    height: 55px;
+    border-radius: 5px;
+    border: 0.5px solid #24242F;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding: 15px;
+    outline: none;
+    background-color: transparent;
+    
+}
+
+input::placeholder{
+    color: #9A9998;
+}
+textarea::placeholder{
+    color: #9A9998;
+}
+
+.form-enquiries select{
+  height: 55px;
+  font-family: 'DM Sans';
+  font-size: 16px;
+  font-weight: 400;
+  color: #9A9998;
+  border-radius: 5px;
+  border: 0.5px solid #24242F;
+  margin-bottom: 10px;
+  outline: none;  
+  padding: 15px;
+  appearance: none; /* Remove a seta padrão */
+  -webkit-appearance: none; /* Remove a seta no Safari */
+  -moz-appearance: none; /* Remove a seta no Firefox */
+  background: #fff;
+  background-image: url('/img/material-request/Arrow\ 3.svg'); 
+  background-repeat: no-repeat;
+  background-position: right 15px center; /* Posiciona a seta */
+  background-size: 10px; /* Ajusta o tamanho da imagem */
+  cursor: pointer;
+  background-color: transparent;
+
+}
+
+.text-enquiries{
+    height: 135.67px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 0.5px solid #24242F;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    background-color: transparent;
+
+}
+
+.button-enquiries{
+    width: 203px;
+    height: 54px;
+    margin-top: 15px;
+    border: 0.5px solid #000000;
+    border-radius: 40px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.button-enquiries:hover{
+    background-color: #C45D16;
+    border: none;
+    color: #FFFFFF;
+}
+
+.div-form-enquiries{
+    margin-left: 151px;
+}
+
+ /* Section com Cards*/
+
+ .cards-container-enquiries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card-enquiries {
+  background-color: #F9F6EC;
+  border-radius: 50px;
+  padding: 30px;
+  width: 377px;
+  height: 320px;
+}
+
+.card-enquiries h4 {
+  font-size: 12px;
+  color: #000000;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'DM Mono';
+  font-weight: 500;
+  line-height: 15.62px;
+}
+
+.card-enquiries h2 {
+  font-size: 36px;
+  color: #000000;
+  margin: 10px 0;
+  height: 180px;
+  font-family: 'DM Sans';
+  font-weight: 500;
+}
+
+.card-enquiries button {
+  background-color: transparent;
+  border: 0.5px solid #000000;
+  border-radius: 40px;
+  padding: 10px 20px;
+  width: 238px;
+  height: 43px;
+  font-size: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'DM Mono';
+  font-weight: 500;
+
+}
+.card-enquiries button:hover {
+    
+    background-color: #C45D16;
+    border: none;
+    color: #FFFFFF;
+
+}
+                                /* Responsividade Material request e Contact us*/
+
+@media (max-width: 1300px){
+
+    .div-form-enquiries{
+        margin-left: 30px;
+    }
+}
+@media (max-width: 1096px){
+
+    .div-form-enquiries{
+        margin-left: 0px;
+    }    
+
+}
+@media (max-width: 619px ){
+
+    .body-enquiries-request{
+    background-image: none;
+   
+    }
+
+    .radio-group{
+        width: 360px;
+    }
+
+
+    .body-enquiries-contact{
+    background-image: none;
+   
+    }
+
+    .main-material-request{
+        margin-left: 0px;
+        padding: 15px;
+        margin-top: 100px;
+    }
+    .title-enquiries h1{
+        font-size: 36px;
+    }
+    .radio-container{
+        width: 360px;
+    }
+
+    .radio-container{
+        flex-direction: column;
+    }
+    .radio-container label{
+        margin-bottom: 15px;
+    }
+    .contact-contentp{
+        width: 355px;
+    }
+    .div-form-enquiries{
+        margin-top: 40px;
+        
+    }
+    .form-enquiries input{
+        width: 360px;
+    }
+    .button-enquiries{
+        margin-left: 70px;
+    }
+    .cards-container-enquiries{
+        padding: 20px;
+    }
+
+
+}
+    @media (max-width: 384px ){
+        .form-enquiries input{
+            width: 330px;
+        }
+
+        .contact-contentp{
+            width: 330px;
+        }
+    }
+
+                                    /* Estilos das páginas Privacy Policy e Terms & Conditions*/
+
+.page-privacy-policy{
+    font-family: 'DM Sans';
+    margin-top: 100px;
+    width: 50%;
+    padding: 5px;
+    margin-left: 100px;
+} 
+
+.page-privacy-policy p{
+
+    font-family: 'DM Sans';
+
+}
+
+@media (max-width: 769px ){
+
+    .page-privacy-policy{
+
+        font-family: 'DM Sans';
+        padding: 20px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .page-privacy-policy p{
+
+    font-family: 'DM Sans';
+
+
+}      
+
+}
+                             /* Página Terms e Conditions*/
+
+.termsconditions{
+
+    font-family: 'DM Sans';
+    margin-top: 100px;
+    width: 50%;
+    padding: 5px;
+    margin-left: 100px;
+
+}
+
+.termsconditions p{
+    font-family: 'DM Sans';
+
+}
+.termsconditions a{
+     color: inherit; 
+    }
+.termsconditions ul{
+    font-family: 'DM Sans';
+
+}
+
+@media (max-width: 769px ){
+
+    .termsconditions{
+
+        font-family: 'DM Sans';
+        padding: 20px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .termsconditions p{
+
+    font-family: 'DM Sans';
+
+}
+    .termsconditions li{
+        margin-left: 30px;
+    }
+       
+
+}
+

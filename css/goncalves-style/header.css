@@ -1,0 +1,342 @@
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.section-main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(flexseaImg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-main h1 {
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 80px;
+}
+
+header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start; /* Alinha os elementos no topo */
+    padding: 19px 100px;
+    border-bottom: 0.5px solid #9A9998;
+    transition: height 0.3s ease, background-color 0.8s ease; /* Adiciona transição suave */
+}
+
+header.sticky {
+    background: #FFFFFF;
+    padding: 20px 100px;
+    align-items: flex-start; /* Mantém o alinhamento no topo */
+}
+
+header .brand {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    margin-top: 0; /* Remove margem superior */
+}
+
+header .menu {
+    position: relative;
+    z-index: 998;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha os itens do menu no topo */
+    margin-top: 0; /* Remove margem superior */
+    top: 10px;
+}
+
+header .menu a {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 30px;
+    border-radius: 20px;
+    display: block; /* Garante que os links ocupem toda a largura */
+}
+
+
+
+a span img {
+    width: 16px;  /* ou o tamanho desejado */
+    height: auto; /* ou um valor fixo se necessário */
+    vertical-align: middle; /* Alinha a imagem verticalmente no meio do texto */
+    transform: translateY(-3px); /* Ajusta a imagem para cima um pouco, se necessário */
+}
+
+header .btn {
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    display: none; /* Mantém escondido por padrão */
+}
+
+header.scroll-adjust {
+    align-items: flex-start; /* Move os elementos para cima */
+    padding-top: 33px; /* Opcional: ajuste adicional no padding */
+}
+
+header .brand img {
+    max-height: 50px; /* Certifique-se de que o logotipo não aumente muito */
+}
+
+header.scroll-adjust .brand img {
+
+    transform: translateY(-9px);
+}
+
+header.scroll-adjust {
+
+    transform: translateY(-5px);
+}
+
+.section-two {
+    min-height: 100vh;
+    background: #001018;
+    padding: 20px 100px;
+}
+
+.section-two h2 {
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+header .menu .close-btn {
+    display: none; /* Esconde por padrão para telas grandes */
+}
+
+header .menu-btn {
+    display: none;
+}
+
+/* Classe para o nav transparente */
+.nav-transparent {
+    background-color: transparent !important;
+}
+
+/* Classe para o nav branco */
+.nav-white {
+    background-color: white !important;
+}
+
+/*=========================== Estilos para o submenu =======================*/
+.menu-item {
+    position: relative;
+}
+
+.menu-item .submenu {
+    display: none; /* Esconde o submenu por padrão */
+    position: absolute;
+    top: 100%; /* Alinha abaixo do item pai */
+    left: 0;
+    background: transparent;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 8px;
+    border: none;
+    min-width: 200px;
+}
+
+.menu-item .submenu li {
+    padding: 2px 0px;
+}
+
+.menu-item .submenu li a {
+    color: #858585;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: left; /* Alinha o texto dos links à esquerda */
+    display: block; /* Garante que os links ocupem toda a largura do submenu */
+    font-family: 'DM Sans', sans-serif; /* Fonte DM Sans */
+    font-weight: 500; /* Peso da fonte */
+}
+
+.menu-item .submenu li a:hover {
+    color: #000000;
+}
+
+.menu-item .submenu {
+    display: none; /* Esconde o submenu por padrão */
+    opacity: 0; /* Inicia com opacidade 0 */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transição suave */
+    transform: translateY(-10px); /* Move o submenu ligeiramente para cima */
+}
+
+.menu-item.active .submenu {
+    display: block; /* Mostra o submenu quando o item está ativo */
+    opacity: 1; /* Torna o submenu visível */
+    transform: translateY(0); /* Retorna o submenu à posição original */
+}
+
+header.submenu-open {
+    height: 250px; /* Aumenta a altura do header */
+    background-color: #FFFFFF;
+    transition: height 0.3s ease, background-color 0.3s ease; /* Transição suave */
+}
+
+
+
+/*======================== Fim Estilos para o submenu =============================*/
+
+@media (max-width: 1060px) {
+
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px; /* Largura total do ícone */
+        height: 16px; /* Altura total do ícone */
+        cursor: pointer; /* Mostra o cursor de clique */
+      }
+      
+      .menu-icon span {
+        display: block;
+        height: 3px; /* Altura de cada barra */
+        width: 75%; /* Largura de cada barra */
+        background-color: #FFFFFF; /* Cor das barras (ajuste se necessário) */
+        margin-bottom: 5px;
+        transition: background-color 0.3s ease; /* Transição suave na cor */
+      }
+
+      .menu-item .submenu li {
+        padding: 0px 0 !important;
+      }
+
+      header {
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px;
+    }
+    
+    header.sticky {
+        background: #FFFFFF;
+        padding: 20px 20px;
+        border-bottom: 0.5px solid #9A9998;
+    }
+
+    header.sticky .menu-icon span {
+        background-color: #000000 !important;
+        transform: translateY(12px) !important;
+    }
+      
+    header .btn {
+        display: block; /* Exibe o botão menu em telas menores */
+    }
+
+    header.scroll-adjust .brand img {
+
+        transform: translateY(0px);
+    }
+    
+    header.scroll-adjust {
+    
+        transform: translateY(0px);
+    }
+
+    .menu-icon-scroll {
+        transform: translateY(12px); /* Move o menu-icon 10px para baixo */
+    }
+    
+
+    header .menu-btn {
+        display: block;
+    }
+
+    header .menu .close-btn {
+        display: block; /* Exibe o botão de fechar menu em telas menores */
+    }
+
+
+    header .menu {
+        position: fixed;
+        z-index: 998; /* Mantém o menu visível e organizado */
+        background: #FFFFFF;
+        flex-direction: column;
+        min-width: 100%;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        padding: 80px 50px;
+        transition: 0.5s;
+        transition-property: right;
+        align-items: flex-start;
+        justify-content: flex-start; /* Mantém o conteúdo no topo */
+
+    }
+
+    header .menu.active {
+        right: 0;
+    }    
+    
+    header .menu .close-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 12px;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    header .menu a {
+        display: block;
+        margin: 20px 0;
+        padding: 0 15px;
+        font-family: 'DM Sans', sans-serif; /* Define a fonte como DM Sans */
+        font-weight: 500; /* Define o peso da fonte como 500 */
+        font-size: 18px; /* Define o tamanho da fonte como 18px */
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+
+    .menu-item .submenu {
+        position: static; /* Posicionamento padrão */
+        display: none; /* Escondido por padrão */
+        background: none; /* Sem background extra */
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .menu-item .submenu li {
+        padding: 10px 0;
+    }
+
+    .menu-item.active .submenu {
+        display: block; /* Mostra o submenu quando o item está ativo */
+    }
+  }

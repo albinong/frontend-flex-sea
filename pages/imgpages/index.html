@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+
+
+    <title>Header</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="brand"> <img src="flexseaLogo.png" alt="Logotipo"></a>
+        <div class="menu">
+            <div class="close-btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="#">Bioplastic</a>
+            <a href="#">Biotech</a>
+            <a href="#">News & Media</a>
+            <div class="menu-item">
+                <a href="#" class="has-submenu">About us
+                    <span>
+                        <img src="arrow-menu-header.svg" alt="">
+                    </span>
+                </a>
+                <ul class="submenu">
+                    <li><a href="#">Our story</a></li>
+                    <li><a href="#">Our approach</a></li>
+                    <li><a href="#">Our team  </a></li>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="has-submenu">Enquiries
+                    <span>
+                        <img src="arrow-menu-header.svg" alt="">
+                    </span>
+                </a>
+                <ul class="submenu">
+                    <li><a href="#">Material request</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-btn">
+            <div class="menu-icon menu-btn">
+                <span></span>
+                <span></span>
+            </div>              
+        </div>
+    </header>
+    <section class="section-main">
+        <h1>Working on the flexsea page</h1>
+    </section>
+
+    <section class="section-two">
+        <h2>Protect Rainforests</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reiciendis ducimus repellat adipisci porro fugiat inventore itaque fuga numquam laboriosam! Nulla, maxime eum! Nostrum quibusdam dicta similique architecto laborum aliquam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reiciendis ducimus repellat adipisci porro fugiat inventore itaque fuga numquam laboriosam! Nulla, maxime eum! Nostrum quibusdam dicta similique architecto laborum aliquam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reiciendis ducimus repellat adipisci porro fugiat inventore itaque fuga numquam laboriosam! Nulla, maxime eum! Nostrum quibusdam dicta similique architecto laborum aliquam.</p>
+        <h2>Protect Nature</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reiciendis ducimus repellat adipisci porro fugiat inventore itaque fuga numquam laboriosam! Nulla, maxime eum! Nostrum quibusdam dicta similique architecto laborum aliquam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reiciendis ducimus repellat adipisci porro fugiat inventore itaque fuga numquam laboriosam! Nulla, maxime eum! Nostrum quibusdam dicta similique architecto laborum aliquam.</p>
+    </section>
+
+    <script type="text/JavaScript">
+        // Adicionar e remover classe 'sticky' ao fazer scroll
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector("header");
+            const menuIconSpans = document.querySelectorAll(".menu-icon span");
+
+            if (window.scrollY > 0) {
+                header.classList.add('sticky');
+                // Mudar a cor das barras do menu-icon para preto
+                menuIconSpans.forEach(span => span.style.backgroundColor = "#000000");
+            } else {
+                header.classList.remove('sticky');
+                // Mudar a cor das barras do menu-icon para branco
+                menuIconSpans.forEach(span => span.style.backgroundColor = "#FFFFFF");
+            }
+        });
+
+        // Controle do menu responsivo
+        const menu = document.querySelector('.menu');
+        const menuBtn = document.querySelector('.menu-btn');
+        const closeBtn = document.querySelector('.close-btn');
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add('active');
+        });
+
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove('active');
+        });
+
+        document.querySelectorAll('.has-submenu').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault(); // Evita navegação padrão
+                const parent = this.parentElement;
+
+        // Fecha outros submenus abertos
+        document.querySelectorAll('.menu-item').forEach(menuItem => {
+            if (menuItem !== parent) {
+                menuItem.classList.remove('active');
+            }
+        });
+
+        // Alterna a classe 'active' no item clicado
+        parent.classList.toggle('active');
+            });
+        });
+    </script>
+    
+</body>
+</html>
