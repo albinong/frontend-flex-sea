@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags para evitar cache -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  
+  <!-- Script para forçar recarregamento sem cache -->
+  <script>
+    (function () {
+      if (!window.location.search.includes('nocache')) {
+        var separator = window.location.search ? '&' : '?';
+        window.location.replace(window.location.pathname + separator + 'nocache=' + new Date().getTime());
+      }
+    })();
+  </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+    <!-- Fonte Google DM Mono e DM Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=DM+Sans:wght@400&display=swap" rel="stylesheet" />
+    <!-- Inclui ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/loading-spinner.css">
+
+
+    <link rel="stylesheet" href="/css/goncalves-style/header.css">
+    <link rel="stylesheet" href="../css/goncalves-style/goncalves-style.css">
+    <link rel="stylesheet" href="/css/styles-henrique.css">
+ 
+   
+    <title>Flex Sea</title>
+
+  </head>
+  
+  <body>
+
+  <div class="spinner" id="spinner"></div>
+
+  <header class="header-index">
+    <a href="/index.html" class="brand"> <img src="/img/flexseaLogo.svg" alt="Logotipo"></a>
+    <div class="menu">
+      <div class="close-btn">
+        <i class="fas fa-times close-btn"></i>
+      </div>
+      <a href="/pages/bioplastics.html">Bioplastic</a>
+      <a href="/pages/biotech.html">Biotech</a>
+      <a href="/pages/news.html">News & Media</a>
+
+      <div class="menu-item">
+        <a href="/pages/about-us.html" class="has-submenu">About us
+          <span class="arrow">
+            <img src="/img/arrow-menu-header.svg" alt="">
+          </span>
+        </a>
+        <ul class="submenu">
+          <li><a href="/pages/about-us.html#story">Our story</a></li>
+          <li><a href="/pages/about-us.html#APPROACH">Our approach</a></li>
+          <li><a href="/pages/about-us.html#TEAM">Our team </a></li>
+        </ul>
+      </div>
+
+      <div class="menu-item">
+        <a href="/pages/enquiries-material-request.html" class="has-submenu">Enquiries
+          <span class="arrow">
+            <img src="/img/arrow-menu-header.svg" alt="">
+          </span>
+        </a>
+        <ul class="submenu">
+          <li><a href="/pages/enquiries-material-request.html">Material request</a></li>
+          <li><a href="/pages/faqs.html">FAQs</a></li>
+          <li><a href="https://www.linkedin.com/company/flex-sea/jobs/" target="_blank">Careers</a></li>
+          <li><a href="/pages/enquiries-contactus.html">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="menu-btn">
+      <div class="menu-icon menu-btn">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+<!-- Botão Fixo no Canto Direito -->
+<a href="/pages/enquiries-contactus.html" class="fixed-circle">
+  <img src="img/icon-get-in-touch.svg" alt="Icon Images" />
+  <span>GET IN TOUCH</span>
+</a>
+
+<div class="section-main">
+  <video autoplay muted loop class="background-video">
+      <source src="video/flexseabioplasticvideo.mov" type="video/mp4">
+      Seu navegador não suporta a tag de vídeo.
+  </video>
+  <div class="content">
+      <!-- Conteúdo que ficará sobre o vídeo -->
+       <hr>
+      <h1>Make a request:</h1>
+      <div>
+         <a href="/pages/enquiries-material-request.html?option=option1">I WANT INJECTION MODE</a>
+         <a href="/pages/enquiries-material-request.html?option=option2">I WANT 3D PRINT</a>
+         <a href="/pages/enquiries-material-request.html?option=option3">I WANT COSMETICS INGREDIENTS</a>
+      </div>
+  </div>
+</div>
+
+<!-- Seção Bioplastic Home-->
+<section class="bioplastic-section-home">
+  <div>
+    <div>
+      <div class="bioplastic-and-botton">
+        <div class="bioplastic-and-elements">
+          <p class="what-we-do-bioplastic">WHAT WE DO</p>
+          <h1><sup><sup class="number-one-bioplastic">1 </sup></sup><strong
+              class="h1-bioplastic-bioplastic">Bioplastic</strong></h1>
+        </div>
+        <div class="container-learn-more-button-bioplastic">
+          <a href="/pages/bioplastics.html">
+            <button class="learn-more-button-bioplastic">LEARN MORE</button>
+          </a>
+        </div>
+      </div><br>
+      <div class="video-bioplastic-section">
+        <video autoplay muted loop>
+          <source src="video/FlexSeaWebsiteAnimationH264.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="container-learn-more-button-bioplastic-mobile">
+        <a href="/pages/bioplastics.html">
+          <button class="learn-more-button-bioplastic-mobile">LEARN MORE</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Seção Biotech Home-->
+<section class="biotech-section-Home">
+  <div>
+    <div class="biotech-and-elements">
+      <p class="but-thats-biotech">BUT THAT'S NOT ALL...</p>
+      <h1><sup><sup class="number-two-biotech">2 </sup></sup><strong class="h1-biotech-biotech">Biotech</strong></h1>
+    </div>
+    <div class="container-img-and-element-biotech">
+      <div class="container-img-biotech">
+        <div class="imag-biotech-section" id="image-section">
+          <img src="../img/biotech/animacao-imagem1.svg" class="animacao-home imagem1" id="imagem-1" alt="">
+          <img src="../img/biotech/animacao-imagem2.svg" class="animacao-home imagem2" id="imagem-2" alt="">
+        </div>
+      </div>
+      <div class="container-element-biotech">
+        <div class="element-biotech-section">
+          <h2 class="h2-element-biotech">FlexSea is dedicated to creating sustainable processes that utilise the full
+            biomass of the seaweed.</h2>
+          <p class="p-element-biotech">
+            This passion for circularity has given rise to our Biotechnology vertical which sees us use natural
+            practices such as bacterial fermentation to extract the full wealth of available material from our seaweed
+            sources.
+          </p>
+          <a href="pages/biotech.html">
+            <button class="button-element-biotech">LEARN MORE</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><br><br>
+
+
+<!-- Latest News Carousel com Cards -->
+
+<section id="slick-carousel-container">
+    <!-- H1 Botão 
+     -->
+    <div class="latest-news">
+        <h1>Latest News</h1>
+        <a href="/pages/news.html">
+            <button>go to news</button>
+        </a>
+    </div>
+    <br>
+
+    <!-- Cards -->
+    <div class="slick-carousel">
+        <div class="card-latest">
+            <p>oct 20, 2024</p>
+            <h3>Sustainable Packaging Technologies has just secured the Innovate UK SMART grant to advance
+                seaweed-derived packaging solutions.</h3>
+            <img src="img/sectionlatest/image.png" alt="Card 1">
+            <a href="/pages/news-article.html">
+            <button>READ ARTICLE</button>
+            </a>
+        </div>
+        <div class="card-latest">
+            <p>oct 01, 2024</p>
+            <h3>Our injection moulding pellets have successfully passed all four home compostability (EN13432) tests.
+            </h3>
+            <img src="img/sectionlatest/DSC08576.png" alt="Card 2">
+            <a href="/pages/news-article.html">
+            <button>READ ARTICLE</button>
+            </a>
+        </div>
+        <div class="card-latest">
+            <p>oct 11, 2024</p>
+            <h3>Our injection moulding pellets have successfully passed all four home compostability (EN13432) tests.
+            </h3>
+            <img src="img/sectionlatest/image (1).png" alt="Card 3">
+            <a href="/pages/news-article.html">
+            <button>READ ARTICLE</button>
+            </a>
+        </div>
+        <div class="card-latest">
+            <p>oct 20, 2024</p>
+            <h3>Sustainable Packaging Technologies has just secured the Innovate UK SMART grant to advance
+                seaweed-derived packaging solutions.</h3>
+            <img src="img/sectionlatest/DSC08567.png" alt="Card 4">
+            <a href="/pages/news-article.html">
+            <button>READ ARTICLE</button>
+            </a>
+        </div>
+        <div class="card-latest">
+            <p>oct 20, 2024</p>
+            <h3>Sustainable Packaging Technologies has just secured the Innovate UK SMART grant to advance
+                seaweed-derived packaging solutions.</h3>
+            <img src="img/sectionlatest/DSC08567.png" alt="Card 4">
+            <a href="/pages/news-article.html">
+            <button>READ ARTICLE</button>
+            </a>
+        </div>
+        
+    <!-- Setas de controle e barra de carregamento -->
+    </div>
+    <div class="custom-carousel-controls">
+        <button class="custom-prev"><img src="/img/sectionlatest/arrow-right-black.svg" alt="Esquerda"></button>
+        <div class="custom-progress-bar">
+            <div class="custom-progress"></div>
+        </div>
+        <button class="custom-next"><img src="/img/sectionlatest/arrow-right-black (1).svg" alt="Direita"></button>
+    </div>
+    
+ 
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!-- Script do Carousel com cards -->
+<script>
+    $(document).ready(function () {
+        $('.slick-carousel').slick({
+            infinite: true,
+            slidesToShow: 3.5,
+            centerMode: false,       
+            centerPadding: '0',     
+            initialSlide: 0, 
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1800,
+            arrows: false,
+            responsive: [
+                      
+              {
+                breakpoint: 1052,
+                settings: {
+                  slidesToShow: 2.5,
+                  variableWidth: false,
+                }
+              },
+            
+            {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        variableWidth: false,
+                    }
+                },
+                {
+                    breakpoint: 503,
+                    settings: {
+                        slidesToShow: 1,
+                        variableWidth: true,
+                        slidesToScroll: 1, 
+                        centerMode: false,  
+                        centerPadding: '0'
+                    }
+                },
+                     {
+                breakpoint: 355,
+                settings: {
+                  slidesToShow: 1,
+                  variableWidth: false,
+                  slidesToScroll: 1,
+                  centerMode: false,
+                  centerPadding: '0'
+                }
+              }
+
+            ]
+        });
+
+        // Setas personalizadas
+        $('.custom-prev').click(function () {
+            $('.slick-carousel').slick('slickPrev');
+        });
+
+        $('.custom-next').click(function () {
+            $('.slick-carousel').slick('slickNext');
+        });
+
+        // Atualizar barra de progresso
+        $('.slick-carousel').on('afterChange', function (event, slick, currentSlide) {
+            const totalSlides = slick.slideCount;
+            const progressPercentage = ((currentSlide + 1) / totalSlides) * 100;
+            $('.custom-progress').css('width', `${progressPercentage}%`);
+        });
+
+        // Configuração inicial da barra de progresso
+        const totalSlides = $('.slick-carousel').slick('getSlick').slideCount;
+        const initialProgress = (1 / totalSlides) * 100;
+        $('.custom-progress').css('width', `${initialProgress}%`);
+
+        // Tornar a barra de progresso clicável
+        $('.custom-progress-bar').click(function (e) {
+            const progressBarWidth = $(this).width();
+            const clickPosition = e.pageX - $(this).offset().left;
+            const clickPercentage = clickPosition / progressBarWidth;
+            const slickInstance = $('.slick-carousel').slick('getSlick');
+            const totalSlides = slickInstance.slideCount;
+
+            const targetSlide = Math.round(clickPercentage * (totalSlides - 1));
+            $('.slick-carousel').slick('slickGoTo', targetSlide);
+        });
+    });
+</script>
+
+<br><br>
+
+<!-- Linha de divisão -->
+
+    <hr class="hr">
+
+<!-- Section com texto -->
+
+    <section class="image5">
+    
+        <p>SUPPORTED BY</p>
+
+    </section>
+
+<!-- Carousel com logos -->
+    
+    <section>
+        <div class="footer-carousel">
+            <div><img src="/img/logos/logo-01.png" alt="Logo 1"></div>
+            <div><img src="/img/logos/logo-02.png" alt="Logo 2"></div>
+            <div><img src="/img/logos/logo-03.png" alt="Logo 3"></div>
+            <div><img src="/img/logos/logo-04.png" alt="Logo 4"></div>
+            <div><img src="/img/logos/logo-05.png" alt="Logo 5"></div>
+            <div><img src="/img/logos/logo-06.png" alt="Logo 5"></div>
+            <div><img src="/img/logos/logo-07.png" alt="Logo 5"></div>
+            <div><img src="/img/logos/logo-08.png" alt="Logo 5"></div>
+            <div><img src="/img/logos/logo-09.png" alt="Logo 5"></div>
+            <div><img src="/img/logos/logo-10.png" alt="Logo 5"></div>
+            <div><img src="/img/logos/logo-11.png" alt="Logo 5"></div>
+        </div>
+    </section>
+
+    <!-- Script carousel logos  -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.footer-carousel').slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1800,
+                arrows: false,
+                dots: false,
+                    responsive: [
+                    {
+                        breakpoint: 1200, // Largura da tela menor que 1200px
+                        settings: {
+                            slidesToShow: 4,
+                        }
+                    },
+                    {
+                        breakpoint: 992, // Largura da tela menor que 992px (tablets e laptops menores)
+                        settings: {
+                            slidesToShow: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 768, // Largura da tela menor que 768px (tablets)
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 500, // Largura da tela menor que 480px (smartphones)
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+
+    <br>
+
+
+    <hr class="hr">
+    
+    <footer class="desktop">
+    
+        <div class="containerfooter">
+    
+            <!-- Coluna 1 -->
+            <div class="form">
+    
+                <p class="title">Sign up to our newsletter:</p>
+    
+                <form action="" method="">
+                    <!-- Campo de Nome -->
+                    <input class="input-name" type="text" id="nome" name="nome" required placeholder="Name">
+    
+                    <!-- Campo de E-mail -->
+                    <input class="input-email" type="email" id="email" name="email" required placeholder="E-mail">
+    
+                    <!-- Checkbox -->
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="privacy-checkbox">
+                        <label class="dm-mono-medium" for="privacy-checkbox">I HAVE READ AND ACCEPT THE <span>PRIVACY
+                                POLICY</span></label>
+                    </div>
+    
+                    <!-- Botão de Envio -->
+                    <button class="button dm-mono-medium" type="submit">SIGN UP</button>
+                    <br><br><br><br>
+    
+                    <div class="group87">
+                        <img src="img/footer/logo footer.svg" alt="">
+                        <ul>
+                            <li>contact@flex-sea.com</li>
+                            <li>+44 1234 12334345</li>
+                        </ul>
+    
+                    </div>
+    
+            </div>
+    
+            <!-- Coluna 2 -->
+            <div class="list">
+                <ul class="ul">
+                    <li><a href="pages/bioplastics.html">Bioplastic</a></li>
+                    <li><a href="pages/biotech.html">Biotech</a></li>
+                    <li><a href="pages/news.html">News & Media</a></li>
+                </ul>
+    
+                <ul class="ul">
+                    <li><a href="pages/about-us.html#story">Our story</a></li>
+                    <li><a href="pages/about-us.html#APPROACH">Our approach</a></li>
+                    <li><a href="pages/about-us.html#TEAM">Our team</a></li>
+                </ul>
+    
+    
+                <ul class="ul">
+                    <li><a href="pages/enquiries-material-request.html">Material request</a></li>
+                    <li><a href="pages/faqs.html">FAQs</a></li>
+                    <li><a href="https://www.linkedin.com/company/flex-sea/jobs/" target="_blank">Careers</a></li>
+                    <li><a href="pages/enquiries-contactus.html">Contact us</a></li>
+                </ul>
+    
+                <a class="linkedin" href="https://uk.linkedin.com/company/flex-sea" target="_blank"><img src="img/footer/linkedinsvg.svg" alt=""></a>
+    
+            </div>
+    
+        </div>
+        <br><br>
+    
+        <!--Rodapé-->
+    
+        <div class="container-rodape">
+    
+            <div class="p">
+                <a href="index.html">©2024 – FLEXSEA</a>
+            </div>
+            <div class="a">
+              <a href="/pages/privacypolicy.html">PRIVACY POLICY</a>-
+              <a href="/pages/t&c.html">TERMS & CONDITIONS</a>
+            </div>
+            <div class="gridspace">
+                <a href="https://grid-space.co/" target="_blank"><span style="color: #D2D2D2;">DEVELOPED BY </span>GRID SPACE</a>
+            </div>
+        </div>
+    
+    
+    </footer>
+   
+    <footer class="mobile">
+
+        <div class="p-a">
+
+            <h3>Sign up to our newsletter:<a href="https://uk.linkedin.com/company/flex-sea" target="_blank"><img src="img/footer/linkedinsvg.svg" alt=""></a></h3>
+            
+        </div>
+        <form class="form-mobile" action="" method="">
+            <!-- Campo de Nome -->
+            <input class="input-name" type="text" id="nome" name="nome" required placeholder="Name">
+        
+            <!-- Campo de E-mail -->
+            <input class="input-email" type="email" id="email" name="email" required placeholder="E-mail">
+        
+            <!-- Checkbox -->
+            <div class="checkbox-container">
+                <input type="checkbox" id="privacy-checkbox">
+                <label class="dm-mono-medium" for="privacy-checkbox">I HAVE READ AND ACCEPT THE <span>PRIVACY
+                        POLICY</span></label>
+            </div>
+        
+            <!-- Botão de Envio -->
+            <button class="button dm-mono-medium" type="submit">SIGN UP</button>
+        </form>
+
+        <br><br>
+
+        <div class="list-mobile">
+
+            <ul class="ul" >
+                <li><a href="pages/bioplastics.html">Bioplastic</a></li>
+                <li><a href="pages/biotech.html">Biotech</a></li>
+                <li id="nm"><a href="pages/news.html">News & Media</a></li>
+            </ul>
+
+            <ul class="ul" id="list2">
+                <li><a href="pages/enquiries-material-request.html">Material request</a></li>
+                <li><a href="pages/faqs.html">FAQs</a></li>
+                <li><a href="https://www.linkedin.com/company/flex-sea/jobs/" target="_blank">Careers</a></li>
+                <li><a href="pages/enquiries-contactus.html">Contact us</a></li>
+            </ul>
+        </div>
+
+             <img id="logo-footer" src="img/footer/logo footer.svg" alt="">
+
+            <div class="group87">
+                
+                <ul>
+                    <li>contact@flex-sea.com</li>
+                    <li>+44 1234 12334345</li>
+                </ul>
+                
+                <ul class="ul" id="cl4">
+                    <li><a href="pages/about-us.html#story">Our story</a></li>
+                    <li><a href="pages/about-us.html#APPROACH">Our approach</a></li>
+                    <li><a href="pages/about-us.html#TEAM">Our team</a></li>
+                </ul>
+            
+            </div>
+
+            <br><br>
+
+            <div class="privacy-policy">
+
+                <a href="/pages/privacypolicy.html">PRIVACY POLICY</a>-
+                <a href="/pages/t&c.html">TERMS & CONDITIONS</a>
+            
+            </div>
+            <br>
+            <div class="rodape">
+            <div class="privacy-policy">
+                <a href="index.html">©2024 – FLEXSEA</a>
+            </div>
+            <div class="privacy-policy">
+                <a href="https://grid-space.co/" target="_blank"><span class="developed-by">DEVELOPED BY </span><span class="grid-space">GRID SPACE</span></a>
+            </div>
+            </div> 
+            
+    </footer>
+
+        <div class="getintouch-mobile">
+        
+          <a href=""><img src="./img/footer/quote.svg" alt="GET IN TOUCH"></a>
+        
+        </div>
+      
+    
+      <!-- JavaScript do Bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Script do Bootstrap -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/header.js"></script>
+      <script src="js/menu-hamburguer.js"></script>
+      <script src="js/fixedCircle.js"></script>   
+      <script src="js/animacao-home.js"></script>
+      <script src="js/home.js"></script>
+      <script src="js/spinner.js"></script>
+      <script src="js/headerscroll.js"></script>
+     
+      
+</body>
+</html>
